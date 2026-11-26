@@ -1,0 +1,43 @@
+id: familienplaner
+version: 0.2.0
+maintainer: dein-github-name
+stage: beta
+topics:
+  - calendar
+  - home
+icon: calendar
+tiles:
+  - id: agenda
+    name: tile_name
+    icon: calendar
+    sizes:
+      min: 1x1
+      max: 2x2
+    memory: 1280
+    domains:
+      - calendar
+    options:
+      - id: title
+        kind: text
+        label: option_title
+        hint: option_title_hint
+      - id: calendars
+        kind: text
+        label: option_calendars
+        hint: option_calendars_hint
+      - id: calendar_names
+        kind: text
+        label: option_calendar_names
+        hint: option_calendar_names_hint
+      - id: calendar_colors
+        kind: text
+        label: option_calendar_colors
+        hint: option_calendar_colors_hint
+      - id: max_items
+        kind: number
+        label: option_max_items
+        hint: option_max_items_hint
+      - id: show_calendar
+        kind: boolean
+        label: option_show_calendar
+        hint: option_show_calendar_hint
