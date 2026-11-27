@@ -1,6 +1,6 @@
 id: familienplaner
-version: 0.2.0
-api: 0.14
+version: "0.2.0"
+api: "0.14"
 maintainer: curro81
 stage: beta
 license: MIT
