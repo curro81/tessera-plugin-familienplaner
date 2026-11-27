@@ -42,6 +42,6 @@ tiles:
         min: 1
         max: 50
       - id: show_calendar
-        kind: boolean
+        kind: toogle
         label: option_show_calendar
         hint: option_show_calendar_hint
