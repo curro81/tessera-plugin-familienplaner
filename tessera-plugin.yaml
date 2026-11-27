@@ -1,7 +1,7 @@
 id: familienplaner
 version: 0.2.0
 api: 0.14
-maintainer: dein-github-name
+maintainer: curro81
 stage: beta
 topics:
   - calendar
