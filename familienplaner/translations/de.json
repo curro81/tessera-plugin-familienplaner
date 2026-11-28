@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "name": "Deutsch"
+  },
+  "screen": {
+    "header_fallback": "Familienplaner",
+    "empty_day": "Keine Termine in den ausgewählten Kalendern",
+    "today_prefix": "Heute"
+  },
+  "app": {
+    "name": "Familienplaner",
+    "summary": "Fasst mehrere Kalender für die ganze Familie übersichtlich auf einer Kachel zusammen.",
+    "tile_name": "Familienplaner",
+    "option_title": "Überschrift",
+    "option_title_hint": "Optionaler Titel oben auf der Kachel",
+    "option_calendars": "Kalender-Entitäten",
+    "option_calendars_hint": "Kommagetrennte Entity-IDs, z. B. calendar.anna, calendar.max, calendar.familie",
+    "option_calendar_names": "Anzeigenamen der Kalender",
+    "option_calendar_names_hint": "Kommagetrennte Namen in derselben Reihenfolge, z. B. Anna, Max, Familie",
+    "option_calendar_colors": "Kalenderfarben (Hex)",
+    "option_calendar_colors_hint": "Kommagetrennte Hex-Farben in derselben Reihenfolge, z. B. #3B82F6, #10B981, #F59E0B",
+    "option_max_items": "Anzahl Einträge",
+    "option_max_items_hint": "Maximale Anzahl angezeigter Termine über alle Kalender hinweg",
+    "option_show_calendar": "Kalendername anzeigen",
+    "option_show_calendar_hint": "Zeigt die Herkunft bzw. Person am Eintrag an"
+  }
+}
