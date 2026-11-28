@@ -65,7 +65,7 @@ void FamilyAgendaTile::create(const tessera::TileContext &c) {
   lv_label_set_long_mode(empty_label_, LV_LABEL_LONG_WRAP);
 
   on_theme();
-  on_tick(0);
+  rebuild_rows();
 }
 
 void FamilyAgendaTile::on_state(JsonObjectConst data) {
@@ -137,7 +137,6 @@ void FamilyAgendaTile::on_state(JsonObjectConst data) {
 
 void FamilyAgendaTile::on_tick(uint32_t epoch) {
   (void) epoch;
-  rebuild_rows();
 }
 
 void FamilyAgendaTile::on_theme() {
@@ -305,7 +304,7 @@ void FamilyAgendaTile::rebuild_rows() {
     }
     text += ev.title;
     if (show_calendar_ && !ev.calendar_name.empty()) {
-      text += " Â· " + ev.calendar_name;
+      text += " · " + ev.calendar_name;
     }
 
     lv_obj_t *lbl = lv_label_create(row);
@@ -351,9 +350,14 @@ bool FamilyAgendaTile::parse_hex_color(const std::string &hex, uint32_t &out_col
   if (clean.size() != 6) {
     return false;
   }
+  for (unsigned char ch : clean) {
+    if (!std::isxdigit(ch)) {
+      return false;
+    }
+  }
   char *endptr = nullptr;
   unsigned long val = std::strtoul(clean.c_str(), &endptr, 16);
-  if (endptr == nullptr || *endptr != ' ') {
+  if (endptr == nullptr || *endptr != '\0') {
     return false;
   }
   out_color = static_cast<uint32_t>(val & 0xFFFFFF);

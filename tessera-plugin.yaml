@@ -1,9 +1,7 @@
 id: familienplaner
-version: "0.2.0"
-api: "0.14"
+version: 0.2.0
 maintainer: curro81
 stage: beta
-license: MIT
 topics:
   - calendar
   - home
@@ -42,6 +40,6 @@ tiles:
         min: 1
         max: 50
       - id: show_calendar
-        kind: toogle
+        kind: toggle
         label: option_show_calendar
         hint: option_show_calendar_hint
